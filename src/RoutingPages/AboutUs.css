@@ -1,0 +1,22 @@
+.aboutsection {
+  display: flex;
+  padding: 30px;
+  margin-top: 90px;
+  flex-wrap: wrap;
+}
+.aboutText {
+  text-align: justify;
+  text-justify: inter-word;
+  display: inline-block;
+  width: 50%;
+  /* min-width: 50%; */
+  font-size: 20px;
+}
+.houseSVG {
+  display: inline-block;
+  width: 45%;
+  padding: 10px;
+}
+#svg{
+  width: 40vw;
+}

@@ -1,0 +1,17 @@
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  padding: 10px;
+}
+hr {
+  margin: 20px;
+}
+Box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

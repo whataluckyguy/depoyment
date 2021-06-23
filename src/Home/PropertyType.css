@@ -1,0 +1,9 @@
+.PropertyType {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.header {
+  text-align: center;
+}

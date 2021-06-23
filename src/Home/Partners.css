@@ -1,0 +1,12 @@
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  padding: 10px;
+}
+hr {
+  margin: 20px;
+}

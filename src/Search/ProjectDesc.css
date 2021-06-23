@@ -1,0 +1,136 @@
+.root {
+  margin-top: 40px;
+  padding: 60px;
+}
+.projectImages {
+  display: flex;
+  justify-content: center;
+}
+
+#firstImage {
+  width: 50vw;
+  height: 60vh;
+  object-fit: cover;
+  padding: 0%;
+  border: 2px solid white;
+
+}
+#secondImage {
+  width: 30vw;
+  height: 30vh;
+  object-fit: cover;
+  padding: 0%;
+  border: 1px solid white;
+}
+#thirdImage {
+  width: 30vw;
+  height: 30vh;
+  object-fit: cover;
+  padding: 0%;
+  margin-top: -7px;
+  border: 1px solid white;
+
+}
+.secondLayer {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.secondLayer > span {
+  font-size: large;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+Button {
+  color: white !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.top {
+  font-weight: bold;
+}
+.bottom {
+  color: gray;
+}
+.floor__plans__img {
+  width: 255px;
+  height: 170px;
+}
+.paper {
+  width: 24%;
+  border-radius: 5% !important;
+  width: fit-content;
+  margin: 5px;
+}
+.paper h3 {
+  text-align: center;
+}
+.paper__content {
+  padding: 10px;
+}
+.two-bhk-plans,
+.three-bhk-plans {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.amenities {
+  margin-top: 40px;
+}
+.amenity__title {
+  padding-left: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+.amenity--columns {
+    width: 33%;
+
+}
+.amenity__name {
+  display: flex;
+  
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+.amenity__list {
+  color: gray;
+}
+.aboutBuilder,
+.BankOffers {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.aboutHead {
+  border-bottom: 1px solid gainsboro;
+}
+.NameOfProject {
+  font-size: xx-large;
+  font-weight: 600;
+}
+.projectTitle {
+  padding-bottom: 20px;
+}
+.projectOverview {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.bhk {
+  padding-top: 20px;
+}
+.callNow {
+  background-image: linear-gradient(
+    to right,
+    #72bb2a 0%,
+    #a0dd49 51%,
+    #c9f57d 100%
+  );
+}

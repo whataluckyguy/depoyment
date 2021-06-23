@@ -1,0 +1,26 @@
+.secondDiv {
+  padding: 20px;
+  margin-left: 116px;
+  margin-right: 116px;
+}
+.secondLayer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondLayer > span {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+Button {
+  background-image: linear-gradient(
+    to right,
+    #72bb2a 0%,
+    #a0dd49 51%,
+    #c9f57d 100%
+  ) !important;
+  color: white !important;
+}
+Card {
+}

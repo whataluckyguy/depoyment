@@ -1,0 +1,101 @@
+.card {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.fistLayer{
+  display: flex;
+}
+
+#morePhotos {
+  margin-left: 80%;
+  background-image: linear-gradient(
+    to right,
+    #72bb2a 0%,
+    #a0dd49 51%,
+    #c9f57d 100%
+  ) !important;
+  padding: 0px !important;
+  text-transform: capitalize;
+}
+.secondLayerOfImg {
+  display: flex;
+}
+.firstImage {
+  width: 33vw;
+  height: 25vh;
+  object-fit: cover;
+  padding: 0px;
+  border: 1px solid white;
+}
+.secondImage {
+  width: 11vw;
+  height: 15vh;
+  padding: 0px;
+  object-fit: cover;
+  margin-top: -7px;
+  border-left: 1px solid white;
+  }
+.brief {
+  padding-left: 10px;
+}
+.fistLayer {
+  display: flex;
+  padding: 20px;
+}
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.address {
+  color: gray;
+  font-size: 15px;
+}
+.price {
+  font-weight: bold;
+}
+.possession {
+  color: gray;
+  font-size: 13px;
+  font-weight: bold;
+}
+.assured {
+  background-image: linear-gradient(
+    to right,
+    #72bb2a 0%,
+    #a0dd49 51%,
+    #c9f57d 100%
+  ) !important;
+  width: fit-content;
+  color: white;
+  border-radius: 5px;
+}
+.desc {
+  color: gray;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 15px;
+}
+.icon {
+  border-right: 1px solid white;
+}
+.verified {
+  font-size: 17px !important;
+}
+span {
+  padding: 5px;
+}
+.viewDetails {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.viewDetails  Button{
+  background-image: linear-gradient(
+    to right,
+    #72bb2a 0%,
+    #a0dd49 51%,
+    #c9f57d 100%
+  ) !important;
+  padding: 3px 10px 3px 10px;
+  text-decoration: none !important;
+}

@@ -1,0 +1,13 @@
+.present {
+  display: flex;
+  padding: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.featured {
+  text-align: center;
+  padding-top: 5vh;
+}

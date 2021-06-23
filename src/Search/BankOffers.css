@@ -1,0 +1,13 @@
+.bankOffers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#card {
+  margin: 5px;
+  width: fit-content;
+}
+.bank {
+  width: 255px;
+  height: 80px;
+}

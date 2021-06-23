@@ -1,0 +1,26 @@
+.sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.image {
+  position: relative;
+  height: 200px;
+  width: 300px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.desc {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 500;
+}
