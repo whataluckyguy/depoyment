@@ -58,8 +58,6 @@ const SearchResult = () => {
     }
   }, []);
 
-  console.log(results);
-
   return (
     <>
       <Header />
@@ -71,7 +69,8 @@ const SearchResult = () => {
               briefAddress={project.briefAddress}
               minPrice={project.minPrice}
               maxPrice={project.maxPrice}
-              projectInfo={project.projectInfo}
+              halfProjectInfo={project.halfProjectInfo}
+              fullProjectInfo={project.fullProjectInfo}
               possession={project.possession}
             />
           </div>

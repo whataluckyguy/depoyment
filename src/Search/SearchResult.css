@@ -5,3 +5,9 @@
 .resultCard {
   margin-bottom: 20px;
 }
+
+@media (max-width: 900px) {
+  .Routing {
+    margin-top: 7vh;
+  }
+}

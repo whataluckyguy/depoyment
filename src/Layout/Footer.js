@@ -1,4 +1,6 @@
+import React from "react";
 import { Box } from "@material-ui/core";
+import "./Footer.css";
 import {
   Call,
   Email,
@@ -9,24 +11,23 @@ import {
   Twitter,
   YouTube,
 } from "@material-ui/icons";
-import {Link} from "react-router-dom";
-import React from "react";
-import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
-  const scrollToTop=()=> {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
-  }
+  };
+
   return (
     <footer>
-      <div className="headSections">
-        <span className="about">
-          <div className="head">About us</div>
-          <div className="elements">
-            <Box>
+      <div className="container">
+        <div className="row">
+          <div className="footer-col about">
+            <h4>About Us</h4>
+            <p>
               Propertieso.com is a company with rich experience in real estate
               advisory that believes each real estate experience should be a
               simple and successful execution from a Dream to Reality. Our team
@@ -34,80 +35,105 @@ function Footer() {
               customer satisfaction, credibility and professionalism Propertieso
               has some of the best professionals in real estate industry who
               specialize in finding property just as per your requirement.
-            </Box>
+            </p>
           </div>
-        </span>
-        <span className="office">
-          <div className="head">Contact Us</div>
-          <div className="elements">
-            <Box className="contact">
-              <div>
-                <LocationCity />
-              </div>
-              <div>878, Mehrauli,</div>
-            </Box>
-            <Box>New Delhi-110030</Box>
-            <Box className="contact">
-              <div>
-                <Call />
-              </div>
-              <div> +91 9999072200</div>
-            </Box>
-            <Box className="contact">
-              <div>
-                <Email />
-              </div>
-              <div> Founder@propertieso.com</div>
-            </Box>
+          <div className="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <div>
+                  <LocationCity />
+                </div>
+                <div>878, Mehrauli,</div>
+              </li>
+              <div style={{ paddingBottom: 20 }}>New Delhi-110030</div>
+              <li>
+                <div>
+                  <Call />
+                </div>
+                <div>+91 9999072200</div>
+              </li>
+              <li>
+                <div>
+                  <Email />
+                </div>
+                <div>Founder@propertieso.com</div>
+              </li>
+            </ul>
           </div>
-        </span>
-        <span className="follow_us">
-          <div className="head">Follow Us</div>
-          <div className="elements">
-            <a href="https://www.facebook.com/propertieso" id="attributes" ><Box className="social">
-              <div className="socialMediaIcons">
-                <Facebook />
-              </div>
-              <div className="socialMediaName">Facebook</div>
-            </Box></a>
-            <a href="https://www.instagram.com/propertiesoo/"  id="attributes"><Box className="social">
-              <div className="socialMediaIcons">
-                <Instagram />
-              </div>
-              <div className="socialMediaName">Instagram</div>
-            </Box></a>
-            <a href="https://www.linkedin.com/company/propertieso/" id="attributes" ><Box className="social">
-              <div className="socialMediaIcons">
-                <LinkedIn />
-              </div>
-              <div className="socialMediaName">LinkedIn</div>
-            </Box></a>
-            <a href="https://twitter.com/Propertiesoo" id="attributes" ><Box className="social">
-              <div className="socialMediaIcons">
-                <Twitter />
-              </div>
-              <div className="socialMediaName">Twitter</div>
-            </Box></a>
-            <a href="https://www.youtube.com/"  id="attributes"><Box className="social">
-              <div className="socialMediaIcons">
-                <YouTube />
-              </div>
-              <div className="socialMediaName">YouTube</div>
-            </Box></a>
+          <div className="footer-col">
+            <h4>Follow Us</h4>
+            <ul>
+              <li>
+                <div style={{ paddingRight: "5px" }}>
+                  <Facebook />
+                </div>
+                <div>
+                  <a href="https://www.facebook.com/propertieso">Facebook</a>
+                </div>
+              </li>
+              <li>
+                <div style={{ paddingRight: "5px" }}>
+                  <Instagram />
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/propertiesoo/">
+                    Instagram
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div style={{ paddingRight: "5px" }}>
+                  <LinkedIn />
+                </div>
+                <div>
+                  <a href="https://www.linkedin.com/company/propertieso/">
+                    LinkedIn
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div style={{ paddingRight: "5px" }}>
+                  <Twitter />
+                </div>
+                <div>
+                  <a href="https://twitter.com/Propertiesoo">Twitter</a>
+                </div>
+              </li>
+              <li>
+                <div style={{ paddingRight: "5px" }}>
+                  <YouTube />
+                </div>
+                <div>
+                  <a href="#">YouTube</a>
+                </div>
+              </li>
+            </ul>
           </div>
-        </span>
-        <span className="links">
-          <div className="head">Important Links</div>
-          <div className="elements">
-            <Link to="/privacy" id="attributes"> <Box>Privacy</Box> </Link>
-
-            <Link to="terms" id="attributes"> <Box>Terms & Conditions</Box> </Link>
-
-            <Link to="about" id="attributes"> <Box>About Us</Box> </Link>
+          <div className="footer-col">
+            <h4>Important Links</h4>
+            <ul>
+              <li>
+                <Link to="/privacy" id="attributes">
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" id="attributes">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" id="attributes">
+                  About Us
+                </Link>
+              </li>
+            </ul>
           </div>
-        </span>
+        </div>
       </div>
-      <div>
+
+      <div className="dis">
         <Box
           className="disclaimer"
           pt={{ xs: 5, sm: 10 }}

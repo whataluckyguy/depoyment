@@ -1,52 +1,48 @@
 import React from "react";
 import Logo from "../Assets/logo.png";
-import { AppBar, makeStyles, Toolbar } from "@material-ui/core";
+import { AppBar, Toolbar } from "@material-ui/core";
 import { Call, WhatsApp } from "@material-ui/icons";
-import {Link} from "react-router-dom";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  title: {
-    flexGrow: 1,
-  },
-  logo: {
-    flexGrow: 1,
-    maxWidth: 150,
-  },
-  contact: {
-    display: "flex",
-    justifyContent: "space-around",
-    marginLeft: "auto",
-    padding: 20,
-    
-  },
-  bar:{
-display:'flex',
-flexWrap:'wrap',
-  },
-}));
+import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
-  const classes = useStyles();
   return (
     <div>
-      <div className={classes.root}>
-        <AppBar position="fixed" color="inherit" >
-          <Toolbar className={classes.bar}>
-            <Link to='/'>
-            <img src={Logo} alt="logo" className={classes.logo} />
+      <div className="root">
+        <AppBar position="fixed" color="inherit">
+          <Toolbar className="bar">
+            <Link to="/">
+              <img src={Logo} alt="logo" className="logo" />
             </Link>
-            <div className={classes.contact}>
-                <div>We are under build process!!</div>
+            <div className="contact">
               <div>
-                <span><Call /></span>
+                <span>
+                  <a
+                    href="tel:+91 9999072200"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <Call />
+                  </a>
+                </span>
               </div>
               <div>
-                <span><WhatsApp /></span>
+                <span>
+                  <a
+                    href="tel:+91 9999072200"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <WhatsApp />
+                  </a>
+                </span>
               </div>
-              <div>9999072200</div>
+              <div>
+                <a
+                  href="tel:+91 9999072200"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  +91 9999072200
+                </a>
+              </div>
             </div>
           </Toolbar>
         </AppBar>

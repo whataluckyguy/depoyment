@@ -1,0 +1,27 @@
+.root {
+  flex-grow: 1;
+  padding: 0px 0px 0px 0px !important;
+}
+.title {
+  flex-grow: 1;
+}
+.logo {
+  flex-grow: 1;
+  width: 150px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  padding: 20;
+}
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    width: 100px;
+  }
+}

@@ -25,25 +25,12 @@ import ready from "./Assets/Property/ready.jpg";
 import gurugram from "./Assets/Property/gurugram.jpg";
 import delhi from "./Assets/Property/delhi.jpg";
 
-
 const App = () => {
-
-  
-  
-
-// const onSearch = (e)=>{
-//   collectionRef.onSnapshot((snapshot)=>
-//   setResults(snapshot.docs.map((doc)=>doc.data())));
-//   const url ="/result"
-//   window.open(url,'_blank');
-// }
-
   return (
     <div className="app">
       <Header />
       {/* Welcome Section */}
       <Home />
-
 
       {/* Trending/Featured Projects */}
       <div className="featured">

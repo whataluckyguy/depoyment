@@ -21,11 +21,11 @@ const useStyles = makeStyles({
   },
 });
 
-function Featured({ title, image, address }) {
+function Featured({ title, image }) {
   const classes = useStyles();
   return (
     <div>
-      <Card className={classes.root} >
+      <Card className={classes.root}>
         <CardMedia
           component="img"
           alt="Featured Projects"
@@ -42,11 +42,9 @@ function Featured({ title, image, address }) {
           >
             {title}
           </Typography>
-          <Typography className={classes.typo}>2,3,4 BHK</Typography>
-          <Typography className={classes.typo}>Address, Gurgaon</Typography>
-          <Typography className={classes.typo}>
-            ₹1.33 CR to ₹3.83 CR{" "}
-          </Typography>
+          <div className={classes.typo}>2,3,4 BHK</div>
+          <div className={classes.typo}>Address, Gurgaon</div>
+          <div className={classes.typo}>₹1.33 CR to ₹3.83 CR </div>
         </CardContent>
       </Card>
     </div>

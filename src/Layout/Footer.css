@@ -1,44 +1,75 @@
-footer {
-  color: white;
-  background-color: black;
-  padding: 40px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.headSections {
+.container {
+  max-width: 90vw;
+  margin: auto;
+}
+.row {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  flex: 1;
 }
-
-.about,
-.office,
-.follow,
-.links {
+ul {
+  list-style: none;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 70px 0;
+}
+.footer-col {
   width: 25%;
+  padding: 0 15px;
 }
-
-.head {
-  text-transform: uppercase;
-  font-size: larger;
-  font-weight: 600;
+.footer-col h4 {
+  font-size: 18px;
+  text-transform: capitalize;
   border-bottom: 1px solid white;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: 500;
 }
-
-.elements {
-  padding-top: 10px;
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  color: white;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  padding-left: 8px;
+}
+.about {
   text-align: justify;
   text-justify: inter-word;
-  
 }
-#attributes{
-  text-decoration: none;
-  color: white;
-}
-.social,
-.contact {
+li {
   display: flex;
 }
-
 .disclaimer {
   text-align: center !important;
+}
+.dis {
+  padding: 60px;
+}
+/* Social Icons */
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
 }

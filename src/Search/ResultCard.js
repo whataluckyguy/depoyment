@@ -9,35 +9,42 @@ const ResultCard = ({
   briefAddress,
   minPrice,
   maxPrice,
-  projectInfo,
+  halfProjectInfo,
+  fullProjectInfo,
   possession,
 }) => {
+  const handleOnClick = (e) => {
+    localStorage.setItem("projectName", projectName);
+    const url = "/desc";
+    window.open(url, "_blank");
+  };
 
-  const handleOnClick =(e)=>{
-    localStorage.setItem('projectName', projectName);
-    const url ="/desc";
-    window.open(url,'_blank');
-  }
+  const readMore = () => {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("readMore");
 
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  };
   return (
     <div>
-      <Card className="card">
-        <div className="fistLayer">
+      <Card id="Card">
+        <div className="firstRow">
           <div className="Images">
-            <img src={first} alt="project" className="firstImage" />
-
-            <div className="secondLayerOfImg">
-              <div>
-                <img src={first} alt="project" className="secondImage" />
-              </div>
-              <div>
-                <img src={first} alt="project" className="secondImage" />
-              </div>
-              <div>
-                <img src={first} alt="project" className="secondImage" />
-              </div>
+            <img src={first} alt="project" id="firstImage" />
+            <div className="bottomImage">
+              <img src={first} alt="project" id="secondImage" />
+              <img src={first} alt="project" id="secondImage" />
+              <img src={first} alt="project" id="secondImage" />
             </div>
-            <Button size="small" id="morePhotos">More photos</Button>
           </div>
           <div className="brief">
             <div className="title">{projectName}</div>
@@ -49,15 +56,29 @@ const ResultCard = ({
               <span className="icon">
                 <VerifiedUserIcon className="verified" />
               </span>
-              <span>Propertieso Assured</span>
+              <span className="icon">Propertieso Assured</span>
             </div>
             <div className="possession">Possession in {possession}</div>
-            <div className="desc">{projectInfo}</div>
+            <div className="desc">
+              <p>
+                {halfProjectInfo}
+                <span id="dots">...</span>
+                <span id="more">{fullProjectInfo}</span>
+                <span
+                  onClick={readMore}
+                  id="readMore"
+                  style={{ color: "green" }}
+                >
+                  Read more
+                </span>
+              </p>
+            </div>
+            <div className="viewDetailsBtn">
+              <Button size="small" onClick={handleOnClick}>
+                View Details
+              </Button>
+            </div>
           </div>
-        </div>
-        
-        <div className="viewDetails" >
-        <Button size="small" onClick={handleOnClick}>View Details</Button>
         </div>
       </Card>
     </div>
